@@ -22,7 +22,6 @@ public class MessageMqDemoApplication {
 			channel.basicPublish("", QUEUE_NAME, null, message.getBytes(StandardCharsets.UTF_8));
 			System.out.println(" [x] Sent '" + message + "'");
 		}
-		SpringApplication.run(MessageMqDemoApplication.class, args);
 	}
 
 }
